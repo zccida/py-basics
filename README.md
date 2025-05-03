@@ -18,3 +18,4 @@ a. By using the lower method for strings. string.lower() turns all string chars 
 Questions Week 1 Conditionals and Bool
 
 1. List the conditional types
+2. List the boolean operators
