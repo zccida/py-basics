@@ -19,3 +19,9 @@ Questions Week 1 Conditionals and Bool
 
 1. List the conditional types
 2. List the boolean operators
+
+
+
+Questions Week 2
+
+Questions Week 3
