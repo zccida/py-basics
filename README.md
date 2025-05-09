@@ -22,6 +22,15 @@ Questions Week 1 Conditionals and Bool
 
 
 
-Questions Week 2
+Questions Week 2 Loops
 
-Questions Week 3
+1. While loops
+2. For loops
+
+Questions Week 3 Exceptions
+
+1. The Try - Except - Else block
+
+Questions week 4 Libraries
+
+1. Modules
