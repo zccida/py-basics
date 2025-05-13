@@ -1,0 +1,26 @@
+import sys
+import requests
+
+
+
+# req_data = requests.get('https://rest.coincap.io/v3/assets?apiKey=14105e9a55ed88c6766d35c8be524494265a24fc1c4851be3606643ac9747636')
+req_data = requests.get('https://rest.coincap.io/v3/assets/bitcoin?apiKey=14105e9a55ed88c6766d35c8be524494265a24fc1c4851be3606643ac9747636')
+text = req_data.json()
+btc_price = 0
+
+for x, y in text['data'].items():
+    if x == 'priceUsd':
+        btc_price = y
+
+btc_price = float(btc_price)
+
+
+try:
+    num = float(sys.argv[1])
+    coin_cost = f"{num * btc_price:,.4f}"
+    print(f"${coin_cost}")
+
+except IndexError:
+    sys.exit("Missing command-line argument")
+except ValueError:
+    sys.exit("Command-line argument is not a number")
